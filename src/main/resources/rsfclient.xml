@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsf xmlns="http://code.hc360.com/schema/rsf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:rsf="http://code.hc360.com/schema/rsf"
+	xsi:schemaLocation="http://code.hc360.com/schema/rsf http://code.hc360.com/schema/rsf/rsf-1.0.xsd">
+
+	<rsf:registry host="register.org.hc360.com"></rsf:registry>
+	
+	<rsf:client id="kvdbService" displayName="商机详情服务" owner="zhanglf"
+		department="架构研发部" interfaceClass="com.hc360.rsf.kvdb.service.KVDBbcService"
+		url="" portalId="kvdbbc">
+	</rsf:client>
+
+    <rsf:client id="fileStorageService" displayName="文件服务" owner="马艳超，赵磊" department="MMT开发部"
+                interfaceClass="com.hc360.rsf.imgup.FileStorageService"
+                portalId="imgup" timeout="30000">
+    </rsf:client>
+
+    <!--url="192.168.50.199" url="192.168.50.87"-->
+    <rsf:client id="fileStorageService2WH" displayName="文件服务" owner="王华存" department="MMT开发部"
+                interfaceClass="com.hc360.rsf.imgup.FileStorageService2WH" url="192.168.50.87"
+                portalId="imgup" timeout="30000">
+    </rsf:client>
+</rsf>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bean>
+<name table="hrtc_sdsl_coinfolog_reverse">com.hc360.storm.hbase.po.HRTC_SDSL_COINFOLOG</name>
+<key rowkey="userid">userid</key>
+<param columnfamily="info" column="type1">type1</param>
+<param columnfamily="info" column="type2">type2</param>
+<param columnfamily="info" column="fullType">fullType</param>
+</bean>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE hibernate-configuration
+        PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
+
+        <!-- c3p0 -->
+        <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+        <property name="hibernate.c3p0.acquireRetryAttempts">30</property>
+        <property name="hibernate.c3p0.acquireIncrement">2</property>
+        <property name="hibernate.c3p0.checkoutTimeout">30000</property>
+        <property name="hibernate.c3p0.idleConnectionTestPeriod">120</property>
+        <property name="hibernate.c3p0.maxIdleTime">180</property>
+        <property name="hibernate.c3p0.initialPoolSize">1</property>
+        <property name="hibernate.c3p0.maxPoolSize">5</property>
+        <property name="hibernate.c3p0.minPoolSize">1</property>
+        <property name="hibernate.c3p0.maxStatements">0</property>
+
+        <!-- yes
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.50.185:1521:logstat</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.username">stat</property>
+        <property name="hibernate.connection.password">x34fdf34r</property>
+        -->
+
+        <!-- 61
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.44.152:1521:bjdt4</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.username">stat</property>
+        <property name="hibernate.connection.password">bfdds06fd</property>
+         -->
+
+        <!-- 97 -->
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.44.133:1521:bjdt4</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.username">stat</property>
+        <property name="hibernate.connection.password">bfdds06fd</property>
+
+
+        <!-- 39
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.44.130:1521:bjdt4</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.username">stat</property>
+        <property name="hibernate.connection.password">bfdds06fd</property>
+        -->
+
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">false</property>
+        <property name="hibernate.use_outer_join">True</property>
+
+        <mapping resource="com/hc360/mmt/db/po/statdb/mapping/BusinIntroduceCsinfo.hbm.xml"/>
+        <mapping resource="com/hc360/mmt/db/po/statdb/mapping/BusinIntroduce.hbm.xml"/>
+        <mapping resource="com/hc360/mmt/db/po/statdb/mapping/BusinIntroduceWHinfo.hbm.xml"/>
+        <mapping resource="com/hc360/mmt/db/po/statdb/mapping/BusinDataTask.hbm.xml"/>
+        <mapping resource="com/hc360/mmt/db/po/statdb/mapping/BusinAttValue.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>

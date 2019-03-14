@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bean>
+<name table="hrtc_sdsl_exposure">com.hc360.storm.hbase.po.HRTC_SDSL_EXPOSURE</name>
+<key rowkey="userid">userid</key>
+<param columnfamily="info" column="businTime">businTime</param>
+<param columnfamily="info" column="detailTime">detailTime</param>
+</bean>

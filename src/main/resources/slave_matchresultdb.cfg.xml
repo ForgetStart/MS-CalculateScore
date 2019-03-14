@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE hibernate-configuration
+    PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+ 	
+	<!-- yes  (matchdb three to one )	 -->
+    <!--<property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.100.61:1521:bjdt</property>-->
+    <!--<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>-->
+    <!--<property name="hibernate.connection.username">match_result</property>-->
+    <!--<property name="hibernate.connection.password">jkn65#ud</property>-->
+	
+	<!--  97  
+	<property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.44.133:1521:bjdt4</property>
+	<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+    <property name="hibernate.connection.username">newhc</property>
+    <property name="hibernate.connection.password">bfdds06fd</property>
+	-->
+	
+ 	<!--  61 
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.44.152:1521:bjdt4</property>
+	<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+    <property name="hibernate.connection.username">newhc</property>
+    <property name="hibernate.connection.password">bfdds06fd</property>
+	-->
+	
+ 	<!--  39 -->
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.44.130:1521:bjdt4</property>
+	<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+    <property name="hibernate.connection.username">newhc</property>
+    <property name="hibernate.connection.password">bfdds06fd</property>
+
+
+    <property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
+    <property name="hibernate.show_sql">false</property>
+    <property name="hibernate.use_outer_join">True</property>
+    <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+    
+    <mapping resource="com/hc360/mmt/db/po/matchresultdb/mapping/ProdQuaSupercat.hbm.xml"/>
+    <mapping resource="com/hc360/mmt/db/po/matchresultdb/mapping/MatchBusinInfo.hbm.xml"/>
+	<mapping resource="com/hc360/mmt/db/po/corpdb/mapping/OnCorTableMore.hbm.xml"/>
+	<mapping resource="com/hc360/mmt/db/po/corpdb/mapping/OnCorTableOther.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

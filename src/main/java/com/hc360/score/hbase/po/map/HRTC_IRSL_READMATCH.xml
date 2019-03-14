@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bean>
+<name table="hrtc_sdsl_visitlog">com.hc360.storm.hbase.po.HRTC_IRSL_READMATCH</name>
+<key rowkey="userid">userid</key>
+<param columnfamily="info" column="status">status</param>
+</bean>
